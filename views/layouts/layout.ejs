@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html ng-app="maroonApp">
+  <head>
+    <meta charset="utf-8">
+<!-- main css -->
+<link rel="stylesheet" href="public/css/style.css">
+<!-- Bootstrap -->
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.0/css/font-awesome.css" />
+
+<!-- <Angular> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular-route.js"></script>
+    <script src="/javascripts/script.js"></script>
+
+  <title>Maroon X</title>
+  </head>
+
+<!-- <define angular controller> -->
+
+<body ng-controller="mainController">
+<!-- <Header and Navbar> -->
+  <header>
+    <nav class="nabber navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/">Maroon-X</a>
+              </div>
+
+               <ul class="nav navbar-nav navbar-right">
+                   <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+                   <li><a href="pages/about.html"><i class="fa fa-shield"></i> About</a></li>
+                   <li><a href="pages/people.html"><i class="fa fa-smile-o"></i> People</a></li>
+                   <li><a href="#contact_somebody"><i class="fa fa-comment"></i> Contact</a></li>
+               </ul>
+      </div>
+    </nav>
+  </header>
+       <!-- <MAIN CONTENT AND INJECTED VIEWS> -->
+  <div class="jumbotron">
+      <div class="message"{{ message }}></div>
+            <!-- <angular tempting> -->
+            <!-- <this is where content will be injected> -->
+  <div ng-view></div>
+
+  </div>
+  <% include ../partials/about %>
+  <% include ../partials/home %>
+  <% include ../partials/people %>
+  <a name="contact_somebody">Goes here.</a>
+  <% include ../partials/contact %>
+</div>
+
+  </body>
+</html>
