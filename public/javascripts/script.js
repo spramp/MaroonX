@@ -18,6 +18,12 @@ maroonApp.config(function($routeProvider) {
                 controller  : 'aboutController'
             })
 
+            // route for the about page
+            .when('/update', {
+                templateUrl : 'partials/update.html',
+                controller  : 'updateController'
+            })
+
             // route for the contact page
             .when('/contact', {
                 templateUrl : 'partials/contact.html',
@@ -40,6 +46,10 @@ maroonApp.config(function($routeProvider) {
    maroonApp.controller('aboutController', function($scope) {
            $scope.message = 'Look! I am an about page.';
          });
+
+   maroonApp.controller('updateController', function($scope) {
+                 $scope.message = 'Look! I am an about page.';
+               });
 
    maroonApp.controller('contactController', function($scope) {
            $scope.message = 'Contact us!';
