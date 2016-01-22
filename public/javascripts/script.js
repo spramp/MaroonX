@@ -9,7 +9,7 @@ maroonApp.config(function($routeProvider) {
             // route for the home page
             .when('/', {
                 templateUrl : 'partials/home.html',
-                controller  : 'mainController'
+                controller  : 'homeController'
             })
 
             // route for the about page
@@ -32,7 +32,7 @@ maroonApp.config(function($routeProvider) {
     });
 
 // create the controller and inject Angular’s $scope
-   maroonApp.controller('mainController', function($scope) {
+   maroonApp.controller('homeController', function($scope) {
 // create a message to display in our view
            $scope.message = 'Modo malorum incident usu ad. Has modo temporizes eu. Ea disputando definitionem eum, vim veritus ponderum euripidis ea. Altera präsent ullamcorper ad per, cu idque expetenda usu.';
          });
@@ -42,7 +42,7 @@ maroonApp.config(function($routeProvider) {
          });
 
    maroonApp.controller('contactController', function($scope) {
-           $scope.message = 'Contact us! JK. This is just a demo.';
+           $scope.message = 'Contact us!';
          });
 
    maroonApp.controller('peopleController', function($scope) {

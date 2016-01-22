@@ -31,15 +31,15 @@
 
 <!-- <define angular controller> -->
 
-<body ng-controller="mainController">
+<body ng-controller="homeController">
 <!-- <Header and Navbar> -->
   <header>
     <nav class="navbar navbar-default">
         <div class="navbar-header">
           <div class="container">
-
+              <h1>Are There Other Planets Like Earth?</h1>
                <ul class="nav navbar-nav navbar-right">
-                   <li><a href=""><i class="fa fa-home"></i> Home</a></li>
+                   <li><a href="/"><i class="fa fa-home"></i> Home</a></li>
                    <li><a href=""><i class="fa fa-shield"></i> About</a></li>
                    <li><a href=""><i class="fa fa-smile-o"></i> People</a></li>
                    <li><a href="#contact"><i class="fa fa-comment"></i> Contact</a></li>
@@ -52,17 +52,17 @@
   <div class="jumbotron">
 
     <center><img src="images/maroonx-logo.png"></center>
-      <!-- <div class="message"{{ message }}></div> -->
-            <!-- <angular tempting> -->
             <!-- <this is where content will be injected> -->
-  <div ng-view></div>
+  <div ng-view>hello</div>
 
   </div>
   <% include ./partials/about %>
   <% include ./partials/people %>
-  <a name="contact"></a>
+
   <% include ./partials/contact %>
-</div>
+<footer>
+  &copy; 2016
+</footer>
 
   </body>
 </html>
