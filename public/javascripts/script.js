@@ -8,25 +8,25 @@ maroonApp.config(function($routeProvider) {
 
             // route for the home page
             .when('/', {
-                templateUrl : 'pages/home.html',
+                templateUrl : 'partials/home.html',
                 controller  : 'mainController'
             })
 
             // route for the about page
             .when('/about', {
-                templateUrl : 'pages/about.html',
+                templateUrl : 'partials/about.html',
                 controller  : 'aboutController'
             })
 
             // route for the contact page
             .when('/contact', {
-                templateUrl : 'pages/contact.html',
+                templateUrl : 'partials/contact.html',
                 controller  : 'contactController'
             })
 
             // route for the contact page
             .when('/people', {
-                templateUrl : 'pages/people.html',
+                templateUrl : 'partials/people.html',
                 controller  : 'peopleController'
           });
     });
