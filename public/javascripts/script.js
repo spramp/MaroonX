@@ -34,7 +34,7 @@ maroonApp.config(function($routeProvider) {
 // create the controller and inject Angular’s $scope
    maroonApp.controller('homeController', function($scope) {
 // create a message to display in our view
-           $scope.message = 'Modo malorum incident usu ad. Has modo temporizes eu. Ea disputando definitionem eum, vim veritus ponderum euripidis ea. Altera präsent ullamcorper ad per, cu idque expetenda usu.';
+           $scope.message = 'Astronomers are on the verge of making an important step towards identifying another Earth. The discovery of an exoplanet the same size as the Earth and orbiting the same distance from its host star as Earth does the Sun is imminent.';
          });
 
    maroonApp.controller('aboutController', function($scope) {
