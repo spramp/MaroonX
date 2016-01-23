@@ -39,10 +39,11 @@
           <div class="container">
               <h1>Are There Other Planets Like Earth?</h1>
                <ul class="nav navbar-nav navbar-right">
-                   <li><a href="/"><i class="fa fa-home"></i> Home</a></li>
-                   <li><a href="#about"><i class="fa fa-shield"></i> About</a></li>
-                   <li><a href="#people"><i class="fa fa-smile-o"></i> People</a></li>
-                   <li><a href="#contact"><i class="fa fa-comment"></i> Contact</a></li>
+                   <li><a href="/" ng-click="changeContent(home)"><i class="fa fa-home"></i> Home</a></li>
+                   <li><a href="#about" ng-click="changeContent(about)"><i class="fa fa-shield"></i> About</a></li>
+                   <li><a href="#update" ng-click="changeContent(update)"<i class="fa fa-folder-open-o"></i> Update</a></li>
+                   <li><a href="#people" ng-click="changeContent(people)"><i class="fa fa-smile-o"></i> People</a></li>
+                   <li><a href="#contact" ng-click="changeContent(contact)"<i class="fa fa-comment"></i> Contact</a></li>
                </ul>
           </div>
         </div>
@@ -53,14 +54,13 @@
 
     <center><img src="images/maroonx-logo.png"></center>
             <!-- <this is where content will be injected> -->
-  <div ng-view>hello</div>
+  <div ng-view></div>
 
   </div>
-  <% include ./partials/about %>
-  <% include ./partials/update %>
-  <% include ./partials/people %>
-
-  <% include ./partials/contact %>
+    <% include ./partials/about %>
+    <% include ./partials/update %>
+    <% include ./partials/people %>
+    <% include ./partials/contact %>
 <footer>
   &copy; 2016
 </footer>
