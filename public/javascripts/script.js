@@ -55,7 +55,7 @@ maroonApp.config(function($routeProvider) {
 
    maroonApp.controller('contactController', function($scope) {
      console.log($scope);
-           $scope.message = 'I am a conteact page';
+           $scope.message = 'I am a contact page';
          });
 
    maroonApp.controller('peopleController', function($scope) {
