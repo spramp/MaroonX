@@ -21,10 +21,11 @@
 <!-- main css -->
 <link rel="stylesheet" href="/stylesheets/style.css">
 
-<!-- <Angular> -->
+<!-- Angular -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular-route.js"></script>
     <script src="/javascripts/script.js"></script>
+<!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 
   <title>Maroon-X</title>
@@ -53,7 +54,10 @@
        <!-- <MAIN CONTENT AND INJECTED VIEWS> -->
   <div class="jumbotron">
 
-    <center><img src="images/maroonx-logo.png" class="img-responsive"></center>
+    <center>
+      <img src="images/maroonx-logo.png" class="img-responsive">
+      <p>Fiber-fed, optical, high-precision radial-velocity spectrograph for the 6.5m Magellan Telescope in Chile</p>
+    </center>
             <!-- <this is where content will be injected> -->
   <div ng-view></div>
 
@@ -62,7 +66,8 @@
     <% include ./partials/update %>
     <% include ./partials/contact %>
 <footer>
-  &copy; 2016
+  &copy; 2016<br>
+  The University of Chicago
 </footer>
 
   </body>
