@@ -18,7 +18,7 @@ maroonApp.config(function($routeProvider) {
                 controller  : 'aboutController'
             })
 
-            // route for the about page
+            // route for the update page
             .when('/update',  {
                 templateUrl : 'partials/update.html',
                 controller  : 'updateController'
@@ -30,10 +30,15 @@ maroonApp.config(function($routeProvider) {
                 controller  : 'contactController'
             })
 
-            // route for the contact page
+            // route for the people page
             .when('/people', {
                 templateUrl : 'partials/people.html',
                 controller  : 'peopleController'
+            })
+            // route for the iotd page
+            .when('/iotd', {
+                templateUrl : 'partials/iotd.html',
+                controller  : 'iotdController'
           });
     });
 
@@ -45,7 +50,7 @@ maroonApp.config(function($routeProvider) {
 
    maroonApp.controller('aboutController', function($scope) {
      console.log($scope);
-           $scope.message = 'Astronomers are on the verge of making an important step towards identifying another Earth. The discovery of an exoplanet the same size as the Earth and orbiting the same distance from its host star as Earth does the Sun is imminent.';
+           $scope.message = 'About this webpage';
          });
 
    maroonApp.controller('updateController', function($scope) {
@@ -63,9 +68,9 @@ maroonApp.config(function($routeProvider) {
            $scope.message = 'We work here!';
          });
 
-   maroonApp.controller('imodController', function($scope) {
+   maroonApp.controller('iotdController', function($scope) {
       console.log($scope);
-            $scope.message = 'imod';
+            $scope.message = 'Image of the Day';
           });
 
     // maroonApp.controller('indexController', function($scope) {
