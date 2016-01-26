@@ -51,7 +51,7 @@ maroonApp.config(function($routeProvider) {
    maroonApp.controller('updateController', function($scope) {
      console.log($scope);
                  $scope.message = 'Look! I am an update page.';
-               });
+         });
 
    maroonApp.controller('contactController', function($scope) {
      console.log($scope);
@@ -62,6 +62,11 @@ maroonApp.config(function($routeProvider) {
      console.log($scope);
            $scope.message = 'We work here!';
          });
+
+   maroonApp.controller('imodController', function($scope) {
+      console.log($scope);
+            $scope.message = 'imod';
+          });
 
     // maroonApp.controller('indexController', function($scope) {
     //        console.log($scope);
