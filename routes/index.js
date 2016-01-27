@@ -22,6 +22,10 @@ router.get('/contact', function(req, res) {
   res.render('contact');
 });
 
+router.get('/calibration', function(req, res) {
+  res.render('calibration');
+});
+
 router.get('/iotd', function(req, res) {
   res.render('iotd');
 });

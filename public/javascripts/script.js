@@ -35,6 +35,13 @@ maroonApp.config(function($routeProvider) {
                 templateUrl : 'partials/people.html',
                 controller  : 'peopleController'
             })
+
+            // route for the calibration page
+            .when('/calibration', {
+                templateUrl : 'partials/calibration.html',
+                controller  : 'calibrationController'
+            })
+
             // route for the iotd page
             .when('/iotd', {
                 templateUrl : 'partials/iotd.html',
@@ -68,10 +75,15 @@ maroonApp.config(function($routeProvider) {
            $scope.message = 'We work here!';
          });
 
+   maroonApp.controller('calibrationController', function($scope) {
+     console.log($scope);
+           $scope.message = 'Calibration starts here';
+               });
+
    maroonApp.controller('iotdController', function($scope) {
       console.log($scope);
-            $scope.message = 'Image of the Day';
-          });
+           $scope.message = 'Image of the Day';
+         });
 
     // maroonApp.controller('indexController', function($scope) {
     //        console.log($scope);
