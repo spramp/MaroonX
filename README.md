@@ -20,3 +20,7 @@
 * Integration of Image of the Day, using an API from NASA.
 
 # Live web app -> http://maroonx.herokuapp.com
+
+[Jan Christian Bernabe](https://github.com/spramp)
+
+January 2016
