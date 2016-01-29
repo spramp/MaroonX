@@ -30,4 +30,12 @@ router.get('/iotd', function(req, res) {
   res.render('iotd');
 });
 
+// router.get('/science', function(req, res) {
+//   res.render('science');
+// });
+//
+// router.get('/home', function(req, res) {
+//   res.render('home');
+// });
+
 module.exports = router;
